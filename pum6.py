@@ -88,6 +88,7 @@ print("================================Data filled with house_rules=============
 
 # Forward filling missing values in 'review rate number' column
 df['review rate number'] = df['review rate number'].ffill()
+
 print("================================Data filled with forward fill================================")
 print(df.isnull().sum())
 print("================================Data filled with forward fill================================\n")
